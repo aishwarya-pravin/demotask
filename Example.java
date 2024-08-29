@@ -1,21 +1,10 @@
-import java.util.Scanner;
-
-public class Example {	
-	
-	private static Scanner sc;
-	
-	public static void main(String[] args) {
-		
-		int i, Number; 
-		long Fctl = 1;
-		sc = new Scanner(System.in);	
-		
-		System.out.println(" Please Enter any number to Find : ");
-		Number = sc.nextInt();
-		
-		for (i = 1; i <= Number; i++)  {
-			Fctl = Fctl * i;
-		}
-		System.out.format("\nFactorial of %d = %d\n", Number, Fctl);
-	}
-}
+class FactorialExample{  
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=8;//It is the number to calculate factorial    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
